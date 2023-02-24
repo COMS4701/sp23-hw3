@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rlhw"
+version = "0.1.0"
+description = ""
+authors = ["cyoon1729 <chrisyoon1729@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+gym = "^0.26.2"
+numpy = "^1.24.1"
+pygame = "^2.1.2"
+black = "^22.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "rlhw.main:main"
