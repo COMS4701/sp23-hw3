@@ -11,6 +11,7 @@ class RandomAgent(BaseAgent):
     def __init__(self, build_env: Callable[[bool], gym.Env], params: Dict[str, Any]):
         BaseAgent.__init__(self, build_env, params)
         self.env = build_env(False)
+        self.policy = np.zeros((self.env.observation_space.n, self.env.action_space.n))
 
     def get_action(self) -> int:
         return self.env.action_space.sample()
