@@ -82,7 +82,7 @@ class QLearningAgent(BaseAgent):
     def learn(
         self, state: npt.NDArray, action: int, reward: float, next_state: npt.NDArray
     ) -> float:
-        """Update Agent's policy using the SARSA algorithm and return the update delta"""
+        """Update Agent's policy using the Q-learning algorithm and return the update delta"""
         # YOUR CODE HERE
 
     def run(self, max_episodes: int, max_steps: int, train: bool):
